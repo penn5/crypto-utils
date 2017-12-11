@@ -1,0 +1,17 @@
+package com.softgate.crypt;
+
+public class KeyPair {
+	private PrivateKey privateKey;
+	private PublicKey publicKey;
+	private KeyPair(){}
+	public KeyPair(PrivateKey privateKey, PublicKey publicKey) {
+		this.privateKey=privateKey;
+		this.publicKey=publicKey;
+	}
+	public PublicKey getPublic() {
+		return this.publicKey;
+	}
+	public PrivateKey getPrivate() {
+		return this.privateKey;
+	}
+}
